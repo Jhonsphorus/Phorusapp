@@ -18,5 +18,5 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('Phorusapp.urls'))
+    path('',include('Phorusapp.urls')) # This is telling it to add Phorusapp.urls
 ]

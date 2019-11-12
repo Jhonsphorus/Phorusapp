@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+    <head>
+    
+        <title> Phorus Blog</title>
+
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css_folder/Phorusapp.css' %}">
+    </head>
+    <body>
+        
+        <div  class="page-header">
+            <h1><a href="/">Phorus Pet Website</a> </h1>
+        </div> 
+        <!-- From Phorusapp.css file -->
+        <div class="content container">
+            <!-- From bootstrap -->
+            <div class="row">  
+                <div class="col-md-8">
+                    {% block content %}
+                         
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+        
+    </body> 
+</html>
+
+

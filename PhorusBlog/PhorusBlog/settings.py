@@ -77,8 +77,14 @@ WSGI_APPLICATION = 'PhorusBlog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql', # Engine name
+        'HOST': 'localhost', # host name
+        'NAME': 'phorusappdb', # Database name
+        'USER': 'Ibukun', # name of User in database
+        'PASSWORD': 'ODUNlade1>', # database Password
+        'PORT' : '3306',  # db port number
     }
 }
 
